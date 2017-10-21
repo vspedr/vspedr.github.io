@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang=pt>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Joãozinho não sabia usar versionamento. Para ele, era só mais um tópico chato na matéria de engenharia de software.Joãozinho fazia seus trabalhos e exercícios da faculdade jogando um monte de arquivos">
+<meta name="keywords" content="git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git para iniciantes - Motivação (Parte 1)">
+<meta property="og:url" content="http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/index.html">
+<meta property="og:site_name" content="vspedr">
+<meta property="og:description" content="Joãozinho não sabia usar versionamento. Para ele, era só mais um tópico chato na matéria de engenharia de software.Joãozinho fazia seus trabalhos e exercícios da faculdade jogando um monte de arquivos">
+<meta property="og:locale" content="pt">
+<meta property="og:updated_time" content="2017-10-21T01:24:39.181Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Git para iniciantes - Motivação (Parte 1)">
+<meta name="twitter:description" content="Joãozinho não sabia usar versionamento. Para ele, era só mais um tópico chato na matéria de engenharia de software.Joãozinho fazia seus trabalhos e exercícios da faculdade jogando um monte de arquivos">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Git para iniciantes - Motivação (Parte 1)</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/vspedr">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2017/10/19/hello-world/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&text=Git para iniciantes - Motivação (Parte 1)"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&title=Git para iniciantes - Motivação (Parte 1)"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&is_video=false&description=Git para iniciantes - Motivação (Parte 1)"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Git para iniciantes - Motivação (Parte 1)&body=Check out this article: http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&title=Git para iniciantes - Motivação (Parte 1)"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&title=Git para iniciantes - Motivação (Parte 1)"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&title=Git para iniciantes - Motivação (Parte 1)"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&title=Git para iniciantes - Motivação (Parte 1)"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&name=Git para iniciantes - Motivação (Parte 1)&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Git para iniciantes - Motivação (Parte 1)
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">vspedr</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2017-10-21T00:12:45.000Z" itemprop="datePublished">2017-10-20</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/git/">git</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Joãozinho não sabia usar versionamento. Para ele, era só mais um tópico chato na matéria de engenharia de software.<br>Joãozinho fazia seus trabalhos e exercícios da faculdade jogando um monte de arquivos fonte em uma pasta no desktop. Joãozinho editava e salvava seus arquivos trocentas vezes, programava por tentativa e erro e nunca lembrava como estava antes de mexer quando estragava uma parte que funcionava.<br>Pedrinho, seu amiguinho, veio com uma ideia genial:</p>
+<blockquote>
+<p>Joãozinho, seu energúmeno, faça como eu! Coloque seu código no Dropbox ou no Google Drive por segurança!</p>
+</blockquote>
+<p>Esses caras. Não seja como esses caras</p>
+<p>Eu lembro quando ouvi falar sobre sistemas de versionamento pela primeira vez na faculdade. “Mas que diabo é isso?” pensei logo de cara, assim como pensava com qualquer termo novo que aparecia. Devo ter respondido uma ou outra pergunta sobre o assunto em uma prova ou lista de exercícios, o assunto morreu e vida que segue.</p>
+<p>Mal eu sabia o quanto eu ia me arrepender de não ter aprendido de verdade.</p>
+<blockquote>
+<p>Nemly &amp; Nemlerey. Fala logo o que é esse tal de versionamento!</p>
+</blockquote>
+<p>Resumindo: É uma forma de controlar e organizar seu trabalho, ao longo do tempo, através de “checkpoints”. INDISPENSÁVEL se você pretende seguir na carreira de desenvolvimento (embora seu uso não seja restrito a desenvolvedores, há muitos designers utilizando, por exemplo). Vai por mim, vale a pena estudar e aprender o quanto antes.</p>
+<blockquote>
+<p>Não entendir…</p>
+</blockquote>
+<p>Vou dar um exemplo. Imagina que você tem que fazer um trabalho em grupo na faculdade. Seria legal se:</p>
+<ul>
+<li>Todos pudessem saber quem mexeu em qual parte de qual arquivo (seja código, documento do Office ou whatever), por quê e quando;</li>
+<li>Fosse possível reverter aquela caca gigantesca que seu amigo (ou você mesmo, vai saber) fez no texto, salvou e ninguém tem uma cópia da versão anterior;</li>
+<li>Todos pudessem trabalhar no mesmo arquivo, ao mesmo tempo, e não fosse um pesadelo na hora de “juntar as partes”.</li>
+</ul>
+<p>E se eu te dissesse que uma ferramenta de versionamento como o Git te dá tudo isso? Está convencido? Falo sobre o Git porque é a ferramenta com que tenho mais experiência, mas existem outras semelhantes como SVN e Mercurial, apenas para citar.</p>
+<p>Como eu disse antes, ele organiza seu trabalho através de “checkpoints” (oficialmente conhecidos como <code>commit</code>s), que são registros de alterações feitas em um conjunto de arquivos (chamado de <em>repositório</em> ou <em>repo</em> para os chegados). Essas alterações geralmente são arquivos adicionados, removidos, renomeados ou alterados, não necessariamente apenas um arquivo por <code>commit</code>. Você pode (e deve) agrupar diversas alterações com uma mesma finalidade em um único <code>commit</code>.</p>
+<p>Cada <code>commit</code> guarda também informações adicionais como o nome do autor da mudança, a data e hora da modificação e “opcionalmente” uma descrição do que foi feito e o motivo. Opcionalmente entre aspas né, porque a ferramenta em si não te obriga a dar uma descrição bem feita. Mas vai por mim, dá uma descrição bem feita. É pro seu próprio bem ;)</p>
+<p>Esses commits vão formando uma sequência de alterações, como um “passo a passo” de modificações que levam seu repositório de uma versão inicial até a versão desejada, mantendo um histórico de tudo o que foi feito até o momento e possibilitando voltar a qualquer momento para um determinado <code>commit</code> caso tenha feito algo errado.</p>
+<p>Mas lembre-se: como diria o tio Ben, com grandes poderes vêm grandes responsabilidades! Você não vai querer acabar como <a href="http://archive.is/EZX1O" target="_blank" rel="external">esse cara</a> que apagou TRÊS MESES de trabalho, sem dó, sem backup, usando a função de “descartar alterações” sem saber direito do que se trata. Então vale a pena estudar bem os conceitos de versionamento e as ferramentas que vai usar antes de colocar a mão na massa em um projeto importante.</p>
+<p>Isso é o básico do básico que eu queria apresentar sobre a importância de aprender esse bendito Git, seja nos seus estudos ou na sua carreira. Tem muito material bacana nas interwebs sobre o assunto, mas eu também pretendo continuar essa série com alguns tutoriais e dicas para mostrar na prática como o Git vai facilitar sua vida. Até a próxima!</p>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/vspedr">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&text=Git para iniciantes - Motivação (Parte 1)"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&title=Git para iniciantes - Motivação (Parte 1)"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&is_video=false&description=Git para iniciantes - Motivação (Parte 1)"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Git para iniciantes - Motivação (Parte 1)&body=Check out this article: http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&title=Git para iniciantes - Motivação (Parte 1)"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&title=Git para iniciantes - Motivação (Parte 1)"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&title=Git para iniciantes - Motivação (Parte 1)"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&title=Git para iniciantes - Motivação (Parte 1)"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://vspedr.github.io/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/&name=Git para iniciantes - Motivação (Parte 1)&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2017 Victor Pedrazzi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/vspedr">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-86660611-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
