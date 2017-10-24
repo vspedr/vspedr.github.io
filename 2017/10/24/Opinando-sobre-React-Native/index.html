@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang=pt>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Em um emprego anterior, tive a chance de trabalhar com o desenvolvimento de um app multiplataforma, com a vantagem de poder utilizar uma linguagem com a qual eu já tinha familiaridade (JS :D), sem me">
+<meta name="keywords" content="react-native">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Opinando sobre React Native">
+<meta property="og:url" content="http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/index.html">
+<meta property="og:site_name" content="vspedr">
+<meta property="og:description" content="Em um emprego anterior, tive a chance de trabalhar com o desenvolvimento de um app multiplataforma, com a vantagem de poder utilizar uma linguagem com a qual eu já tinha familiaridade (JS :D), sem me">
+<meta property="og:locale" content="pt">
+<meta property="og:updated_time" content="2017-10-24T23:37:00.019Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Opinando sobre React Native">
+<meta name="twitter:description" content="Em um emprego anterior, tive a chance de trabalhar com o desenvolvimento de um app multiplataforma, com a vantagem de poder utilizar uma linguagem com a qual eu já tinha familiaridade (JS :D), sem me">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Opinando sobre React Native</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/vspedr">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2017/10/20/Git-para-iniciantes-Motivacao-Parte-1/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&text=Opinando sobre React Native"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&title=Opinando sobre React Native"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&is_video=false&description=Opinando sobre React Native"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Opinando sobre React Native&body=Check out this article: http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&title=Opinando sobre React Native"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&title=Opinando sobre React Native"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&title=Opinando sobre React Native"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&title=Opinando sobre React Native"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&name=Opinando sobre React Native&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Comecando-pelo-comeco-o-que-e-React-Native"><span class="toc-number">1.</span> <span class="toc-text">Começando pelo começo: o que é React Native?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Caracteristicas-vantagens-e-desvantagens"><span class="toc-number">2.</span> <span class="toc-text">Características, vantagens e desvantagens</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Linguagem-Javascript"><span class="toc-number">2.1.</span> <span class="toc-text">Linguagem: Javascript</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linguagens-nativas"><span class="toc-number">2.2.</span> <span class="toc-text">Linguagens nativas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CodePush"><span class="toc-number">2.3.</span> <span class="toc-text">CodePush</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Opinando sobre React Native
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">vspedr</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2017-10-24T22:13:07.000Z" itemprop="datePublished">2017-10-24</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/react-native/">react-native</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Em um emprego anterior, tive a chance de trabalhar com o desenvolvimento de um app multiplataforma, com a vantagem de poder utilizar uma linguagem com a qual eu já tinha familiaridade (JS :D), sem me enroscar na curva de aprendizado de duas ou mais linguagens novas. Nesse artigo, quero comentar um pouco sobre a experiência de trabalhar com React Native, ressaltando algumas vantagens e desvantagens da plataforma!</p>
+<h2 id="Comecando-pelo-comeco-o-que-e-React-Native"><a href="#Comecando-pelo-comeco-o-que-e-React-Native" class="headerlink" title="Começando pelo começo: o que é React Native?"></a>Começando pelo começo: o que é React Native?</h2><p>É um framework de desenvolvimento de aplicativos móveis que de fato usa componentes nativos de Android, iOS e Windows (sim, estão empurrando isso) por baixo dos panos, diferente de outros como Ionic e Phonegap que são (falando de maneira bem superficial) webviews, como se fosse uma página web em um navegador capaz de interagir com os recursos do seu aparelho.</p>
+<p>Sabemos que o Facebook anda investindo bastante em tecnologias Open Source, como é o caso do React, um dos frameworks web mais populares atualmente. Como um dos principais produtos, digamos assim, do FB para seus usuários é o aplicativo móvel, é claro que eles não ficariam de fora da oportunidade de ter em mãos uma ferramenta que agiliza bastante o desenvolvimento de apps e ainda tem apoio da comunidade.</p>
+<h2 id="Caracteristicas-vantagens-e-desvantagens"><a href="#Caracteristicas-vantagens-e-desvantagens" class="headerlink" title="Características, vantagens e desvantagens"></a>Características, vantagens e desvantagens</h2><h3 id="Linguagem-Javascript"><a href="#Linguagem-Javascript" class="headerlink" title="Linguagem: Javascript"></a>Linguagem: Javascript</h3><p>A ideia de usar uma linguagem popular em aplicações web no desenvolvimento de apps móveis não é grande novidade, como nos exemplos que citei (Ionic e Phonegap). É um grande atrativo para startups pelo fato de acelerar a chegada de um app às lojas, tanto do Android quando do iOS (vou deixar o Windows de fora dos exemplos, apenas saibam que ele existe :sweat_smile:).</p>
+<p>Além disso, é bem menos custoso, tanto em tempo quanto em dinheiro, manter um desenvolvedor que sabe JS para cuidar de um único projeto do que manter um dev para cada plataforma, em projetos separados. Claro que vão haver diferenças nos aplicativos, mas é possível ter no código estruturas como:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">if (Platform.OS === &apos;android&apos;) &#123;</div><div class="line">  console.warn(&apos;Tô no Android!&apos;);</div><div class="line">&#125; else &#123;</div><div class="line">  console.warn(&apos;Tô no iOS!&apos;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">console.warn(&apos;Tanto faz /shrug&apos;);</div></pre></td></tr></table></figure>
+<p>Mesmo assim, é possível ter algo em volta de 90% de código em comum para os dois sistemas.</p>
+<p>Sem falar na estrutura de componentes que é quase idêntica à do React, com JSX e tudo mais, e os mesmos conceitos de <code>state</code> e <code>props</code> se aplicam. Para quem já manja React, o -Native é um degrauzinho a mais. Para quem não manja, também não tem muito segredo.</p>
+<h3 id="Linguagens-nativas"><a href="#Linguagens-nativas" class="headerlink" title="Linguagens nativas"></a>Linguagens nativas</h3><p>Projetos de React Native são compostos basicamente de 3 partes:</p>
+<ul>
+<li>o Javascript que comentei acima;</li>
+<li>um projeto Android, com direto a <code>gradle</code> e tudo mais (sim, você provavelmente vai precisar do Android Studio);</li>
+<li>um projeto iOS (do XCode).</li>
+</ul>
+<p>Para acessar algumas features do sistema operacional que não vêm por default no React Native, no entanto, vai ser necessário usar código nativo, mas não é complicado. Muitas bibliotecas da comunidade já cuidam de tudo pra você, desde notificações Push até leitura de SMS, automatizando até a importação do código nativo nos respectivos projetos (olá <code>react-native link</code>).</p>
+<p>Se você entende de desenvolvimento em linguagens nativas, também pode escrever suas bibliotecas, fazendo a comunicação com o thread do Javascript através de uma “bridge”. Só tenha em mente que essa bridge é um dos maiores gargalos de performance, então tente minimizar a troca de dados entre código nativo e JS.</p>
+<h3 id="CodePush"><a href="#CodePush" class="headerlink" title="CodePush"></a>CodePush</h3><p>A Microsoft resolveu entrar na brincadeira e também vem contribuindo bastante com o Open Source, trazendo um presentão pra comunidade do React Native: o CodePush, uma ferramenta que permite o envio de atualizações pro seu aplicativo sem ter de passar pelo processo cansativo de “deploy” nas lojas (especialmente da App Store, que é bem burocrático).<br>Funciona mais ou menos assim: se a sua atualização tem apenas modificações no código JS, o CodePush vai gerar um “bundle”, um pacotão com seu código, mandar pra nuvem (Azure, suponho) e seus usuários vão baixar este novo bundle em segundo plano, substituindo o bundle da versão anterior a partir da próxima vez que o app for aberto (o evento que provoca a atualização pode ser configurado).</p>
+<p>Por outro lado, caso você tenha modificado código nativo vai ter que fazer o processo padrão que é compilar novamente e enviar os binários para as respectivas lojas (relaxa, só leva uns 15 dias pra ser publicado na App Store).</p>
+<p>Uma desvantagem do CodePush, que eu não pesquisei a fundo para saber se tem solução, é que caso esse bundle falhe ao instalar não será feita outra tentativa de instalar a mesma atualização. Isso é pra prevenir que o aplicativo fique num loop de crash, caso seu JS jogue um erro logo de cara. Mas também faz com que seus usuários fiquem com uma versão atrasada até a próxima atualização.</p>
+<hr>
+<p>Vou fechar esse artigo por aqui pra não ficar muito extenso, mas pretendo continuar com algumas considerações sobre performance, a participação da comunidade e o que mais vier à mente. Espero que esse pedaço já seja suficiente para ter uma noção do que esperar caso resolva começar um projeto em React Native!</p>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/vspedr">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Comecando-pelo-comeco-o-que-e-React-Native"><span class="toc-number">1.</span> <span class="toc-text">Começando pelo começo: o que é React Native?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Caracteristicas-vantagens-e-desvantagens"><span class="toc-number">2.</span> <span class="toc-text">Características, vantagens e desvantagens</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Linguagem-Javascript"><span class="toc-number">2.1.</span> <span class="toc-text">Linguagem: Javascript</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linguagens-nativas"><span class="toc-number">2.2.</span> <span class="toc-text">Linguagens nativas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CodePush"><span class="toc-number">2.3.</span> <span class="toc-text">CodePush</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&text=Opinando sobre React Native"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&title=Opinando sobre React Native"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&is_video=false&description=Opinando sobre React Native"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Opinando sobre React Native&body=Check out this article: http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&title=Opinando sobre React Native"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&title=Opinando sobre React Native"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&title=Opinando sobre React Native"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&title=Opinando sobre React Native"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://vspedr.github.io/2017/10/24/Opinando-sobre-React-Native/&name=Opinando sobre React Native&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2017 Victor Pedrazzi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/vspedr">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-108534391-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
